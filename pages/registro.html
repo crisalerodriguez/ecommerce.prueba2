@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="nav">
+        <h1 class="mt-2"><img class="imginfo" src="../imagenes/logo.jpg" style="width: 75px;"><a class="navbar-brand" href="../index.html">Pc-malvinas</h1></a>
+        <div class="barra_nav">
+        <a class="nav-link" aria-current="page" href="../index.html">Productos</a>
+        <a class="nav-link active" href="./registro.html">Registrarse</a>
+        <a class="nav-link" href="#contactos">Contacto</a>
+            <div class="carritoContainer">
+                <button id="verCarrito">Ver Carrito</button>
+                <img src="../imagenes/carrito1.png">
+            </div>   
+            <div>
+                <h5 id="cantidadCarrito"></h5>
+            </div>
+        </div>
+    </nav>
+    
+<section class="relleno">
+    <div class="container form-register register">
+        <div class="information">
+            <div class="info-childs">
+                <h2 id="title">Bienvenido</h2>
+                <p>Si queres recibir las mejores oferta, Unete a nuestra comunidad! Inicia Sesion con tus datos</p>
+                <input type="button" value="Iniciar Sesion" id="signIn">
+            </div>
+        </div>
+        <div class="form-information ">
+            <div class="form-information-childs">
+                <h2>Crear una Cuenta</h2>
+            </div>
+            <form class="form">
+                <label class="input-field">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="nombreCompleto" placeholder="Nombre Completo">
+                    <div id="nombreCompletoError" class="error-message"></div>
+                </label>
+                
+                <label class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Email">
+                    <div id="emailError" class="error-message"></div>
+                </label>
+                
+                <label class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="contrasena" placeholder="Contraseña">
+                    <div id="contrasenaError" class="error-message"></div>
+                </label>
+                <input class="btn-register" type="submit" value="Registrarse"> 
+            </form>
+        </div>
+    </div>
+
+    <div class="container form-register login hide">
+        <div class="information">
+            <div class="info-childs">
+                <h2 id="title">Bienvenido</h2>
+                <p>¿Aún no te has registrado? ¡Hazlo ahora y obtén descuentos en tus próximas compras! No te pierdas esta oportunidad.</p>
+                <input type="button" value="Registrarse" id="signUp">
+            </div>
+        </div>
+        <div class="form-information2">
+            <div class="form-information-childs">
+                <h2>Iniciar Sesión</h2>
+            </div>
+            <form class="form">
+                <label class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="emailError" placeholder="Email">
+                </label>
+                <label class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="contrasenaError" placeholder="Contraseña">
+                </label>
+                <input class="btn-register" type="submit" value="Iniciar Sesión"> 
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+    <footer class="footer mt-5">
+        <div class="marcaspadre container-fluid col-12 mt-4">
+            <div class="marcas-track">
+
+                <div class="marcas ms-4 mt-1">
+                    <img src="../imagenes/marcas/adata-logo.png" alt="">
+                </div>
+                <div class="marcas me-4">
+                    <img src="../imagenes/marcas/Aerocool_logo.png" alt="">
+                </div>
+                <div class="marcas me-4">
+                    <img src="../imagenes/marcas/aorus-gigabyte.png" alt="">
+                </div>
+                <div class="marcas me-4 mb-1">
+                    <img src="../imagenes/marcas/asus.png" alt="">
+                </div>
+                <div class="marcas me-4">
+                    <img src="../imagenes/marcas/coolermasterlogo.jpg" alt="">
+                </div>
+                <div class="marcas me-4">
+                    <img src="../imagenes/marcas/corsair.png" alt="">
+                </div>
+                <div class="marcas me-4">
+                    <img src="../imagenes/marcas/evga.jpg" alt="">
+                </div>
+                <div class="marcas me-4">
+                    <img src="../imagenes/marcas/hyperx.png" alt="">
+                </div>
+                <div class="marcas me-4">
+                    <img src="../imagenes/marcas/intel.jpg" alt="">
+                </div>
+                <div class="marcas me-4">
+                    <img src="../imagenes/marcas/logitechG.png" alt="">
+                </div>
+                <div class="marcas me-4">
+                    <img src="../imagenes/marcas/redragon.png" alt="">
+                </div>
+                <div class="marcas me-4">
+                    <img src="../imagenes/marcas/razer.png" alt="">
+                </div>
+                <div class="marcas me-4">
+                    <img src="../imagenes/marcas/ryzen.png" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="info" id="contactos">
+            <div>
+                <img class="imginfo" src="../imagenes/logo.jpg" href="../index.html" style="width: 100px;">
+            </div>
+            <div class="nosotros">
+                <h5>SOBRE NOSOTROS</h5>
+                <div class="preguntas">
+                    <a href="#">- Ubicacion</a>
+                    <a href="#">- Preguntas Frecuentes</a>
+                    <a href="#">- Envios</a>
+                    <a href="#">- Nosotros</a>
+                </div>
+            </div>
+            <div class="contacto">
+                <h5>CONTACTO</h5>
+                <a href="https://www.facebook.com/caisasoluciones"><img class="contact" src="../imagenes/logitos/fb.png"></a>
+                <a href="https://api.whatsapp.com/message/LXGEC4GYLNCIB1?autoload=1&app_absent=0"><img class="contact" src="../imagenes/logitos/whtsapp.png"></a>
+                <a href="https://www.instagram.com/caisasolucionesgraficas/"><img class="contact" src="../imagenes/logitos/ig2.png"></a>
+            </div>
+        </div>
+    </footer>
+
+<!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="../js/form.js"></script>
+    <script src="../js/productos.js"></script>
+    <script src="../js/script.js"></script>
+    
+    
+</body>
+</html>
